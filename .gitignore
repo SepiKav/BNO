@@ -1,15 +1,35 @@
-# HPC outputs
-slurm-*
-checkpoints/
-tmp/
-scratch/
-
-# Large/raw data
-shared/data/raw/
-*.h5
-*.hdf5
+# Temporary HPC directories, anywhere in the repository
+**/checkpoints/
+**/tmp/
+**/scratch/
 
 # Python
 __pycache__/
+*.py[cod]
 .venv/
 .ipynb_checkpoints/
+
+# Editor and operating-system files
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Crash dumps
+core
+core.*
+
+# Secrets
+.env
+*.pem
+*.key
+
+# Licensed VASP pseudopotentials: never upload these
+POTCAR
+POTCAR.*
+**/POTCAR
+**/POTCAR.*
+
+# Optional raw data directory
+shared/data/raw/
