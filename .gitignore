@@ -1,0 +1,15 @@
+# HPC outputs
+slurm-*
+checkpoints/
+tmp/
+scratch/
+
+# Large/raw data
+shared/data/raw/
+*.h5
+*.hdf5
+
+# Python
+__pycache__/
+.venv/
+.ipynb_checkpoints/
